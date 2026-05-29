@@ -652,15 +652,15 @@ footer {
 /* ── SOCIAL PROOF BLOCK ──────────────────────────────────── */
 .proof-block {
   margin-top: 64px;
-  background: var(--navy);
+  background: var(--cream-card);
   border-radius: 16px;
   padding: 52px 56px;
   position: relative;
   overflow: hidden;
-  border: 1px solid rgba(255,255,255,0.06);
+  border: 1px solid var(--border);
   box-shadow:
-    0 24px 64px rgba(13,31,60,0.22),
-    0 4px 16px rgba(13,31,60,0.12);
+    0 8px 32px rgba(13,31,60,0.07),
+    0 2px 8px rgba(13,31,60,0.04);
 }
 
 /* Linha crimson no topo — identidade Bérgamo */
@@ -680,18 +680,18 @@ footer {
   font-family: 'Cormorant Garamond', serif;
   font-size: 200px;
   line-height: 1;
-  color: rgba(255,255,255,0.04);
+  color: rgba(13,31,60,0.04);
   pointer-events: none;
   user-select: none;
 }
 
-/* Brilho navy no fundo */
+/* Brilho decorativo no canto */
 .proof-block::after {
   content: '';
   position: absolute;
   bottom: -60px; right: -60px;
   width: 300px; height: 300px;
-  background: radial-gradient(ellipse, rgba(139,26,26,0.10) 0%, transparent 65%);
+  background: radial-gradient(ellipse, rgba(13,31,60,0.04) 0%, transparent 65%);
   pointer-events: none;
 }
 
@@ -716,7 +716,7 @@ footer {
   font-size: clamp(52px, 6vw, 80px);
   font-weight: 700;
   line-height: 1;
-  color: var(--gold-v);
+  color: var(--navy);
   letter-spacing: -2px;
   margin-bottom: 10px;
 }
@@ -728,19 +728,19 @@ footer {
   font-weight: 600;
   letter-spacing: 3px;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.45);
+  color: var(--text-muted);
 }
 
 .proof-vdiv {
   width: 1px;
   height: 60px;
-  background: linear-gradient(to bottom, transparent, rgba(184,146,58,0.35), transparent);
+  background: linear-gradient(to bottom, transparent, var(--border-s), transparent);
   flex-shrink: 0;
 }
 
 .proof-hdiv {
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(184,146,58,0.25), transparent);
+  background: linear-gradient(90deg, transparent, var(--border-s), transparent);
   margin-bottom: 32px;
   position: relative; z-index: 1;
 }
@@ -751,7 +751,7 @@ footer {
   font-size: clamp(16px, 2vw, 20px);
   font-weight: 400;
   line-height: 1.75;
-  color: rgba(255,255,255,0.78);
+  color: var(--text-main);
   text-align: left;
   margin-bottom: 20px;
   position: relative; z-index: 1;
@@ -765,7 +765,7 @@ footer {
   font-weight: 600;
   letter-spacing: 2.5px;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.30);
+  color: var(--crimson);
   position: relative; z-index: 1;
 }
 
