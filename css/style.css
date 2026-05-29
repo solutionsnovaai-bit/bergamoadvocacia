@@ -456,27 +456,11 @@ main.visible { opacity:1; }
   border:1px solid var(--border);
   border-radius:12px; padding:40px 32px;
   background:var(--cream-card);
-  position:relative; overflow:hidden;
+  position:relative;
   transition:transform 0.35s, border-color 0.35s, box-shadow 0.35s;
 }
 
-/* Shimmer sweep nos plan-cards */
-.plan-card::before {
-  content:'';
-  position:absolute; top:0; bottom:0; left:-100%;
-  width:60%;
-  background:linear-gradient(90deg,
-    transparent,
-    rgba(13,31,60,0.04),
-    transparent
-  );
-  pointer-events:none;
-  z-index:0;
-}
-.plan-card:hover::before {
-  animation: shimmerSweep 0.6s ease forwards;
-}
-.plan-card > * { position:relative; z-index:1; }
+/* Shimmer apenas nos svc-cards (plan-cards não têm overflow:hidden) */
 
 .plan-card:hover {
   transform:translateY(-4px);
@@ -488,6 +472,7 @@ main.visible { opacity:1; }
 .plan-card.featured {
   border:1.5px solid var(--navy);
   background:rgba(13,31,60,0.04);
+  margin-top: -16px;
   animation: featuredPulse 4s ease-in-out infinite;
 }
 .plan-card.featured::after {
