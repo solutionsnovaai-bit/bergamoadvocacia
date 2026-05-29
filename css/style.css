@@ -448,6 +448,7 @@ main.visible { opacity:1; }
   display:grid;
   grid-template-columns:repeat(auto-fit, minmax(290px, 1fr));
   gap:22px; align-items:start;
+  padding-top: 16px;
 }
 
 /* ── PLAN CARDS ──────────────────────────────────────────── */
